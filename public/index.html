@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch and Filter</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-slate-800 dark:bg-slate-300">
+
+    <div class="flex flex-col items-center justify-center">
+
+        <div class="flex flex-row items-center ">
+            <h1 class="text-2xl font-bold m-6 text-white dark:text-black">Fetch and Filter </h1>
+            <button id="mode"
+                class=" px-4 text-white dark:text-black dark:font-bold dark:border-black	 border-2 rounded-lg ">Mode</button>
+        </div>
+
+        <div>
+            <input id="input" type="text" placeholder="Type a name"
+                class="border-2 p-2 rounded-md text-center dark:border-black	">
+            <ol id="olUsers" class="flex flex-col items-center p-6 text-white dark:text-black font-bold">
+                <li>Loading...</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        const htmlElement = document.querySelector("html")
+        const $buttonMode = document.querySelector('#mode');
+
+
+        const toogleMode = () => {
+            htmlElement.classList.contains("dark") ?
+                htmlElement.classList.remove("dark") :
+                htmlElement.classList.add("dark")
+        }
+
+        $buttonMode.addEventListener('click', toogleMode);
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/styles.css --watch"
+  },
+  "author": "David Constante <omileconstante@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  }
+}
